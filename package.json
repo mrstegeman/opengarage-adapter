@@ -1,0 +1,91 @@
+{
+  "name": "opengarage-adapter",
+  "display_name": "OpenGarage",
+  "version": "0.1.0",
+  "description": "OpenGarage adapter.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrstegeman/opengarage-adapter.git"
+  },
+  "keywords": [
+    "mozilla",
+    "iot",
+    "adapter",
+    "opengarage"
+  ],
+  "author": "Michael Stegeman",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mrstegeman/opengarage-adapter/issues"
+  },
+  "homepage": "https://github.com/mrstegeman/opengarage-adapter#readme",
+  "dependencies": {
+    "ip-regex": "^4.1.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.1.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "SHA256SUMS",
+    "index.js",
+    "manifest.json",
+    "node_modules"
+  ],
+  "moziot": {
+    "api": {
+      "min": 2,
+      "max": 2
+    },
+    "plugin": true,
+    "exec": "{nodeLoader} {path}",
+    "config": {
+      "pollInterval": 30,
+      "devices": []
+    },
+    "schema": {
+      "type": "object",
+      "required": [
+        "pollInterval",
+        "devices"
+      ],
+      "properties": {
+        "pollInterval": {
+          "title": "Poll Interval",
+          "description": "Interval in seconds at which to poll devices for updates",
+          "type": "integer",
+          "minimum": 1
+        },
+        "devices": {
+          "type": "array",
+          "title": "List of devices",
+          "items": {
+            "title": "Device",
+            "type": "object",
+            "required": [
+              "address",
+              "dkey"
+            ],
+            "properties": {
+              "address": {
+                "type": "string",
+                "title": "IP address"
+              },
+              "dkey": {
+                "type": "string",
+                "title": "Device key"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

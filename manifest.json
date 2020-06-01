@@ -1,0 +1,62 @@
+{
+  "author": "Michael Stegeman",
+  "description": "OpenGarage adapter.",
+  "gateway_specific_settings": {
+    "webthings": {
+      "exec": "{nodeLoader} {path}",
+      "primary_type": "adapter",
+      "strict_max_version": "*",
+      "strict_min_version": "0.10.0"
+    }
+  },
+  "homepage_url": "https://github.com/mrstegeman/opengarage-adapter#readme",
+  "id": "opengarage-adapter",
+  "license": "MPL-2.0",
+  "manifest_version": 1,
+  "name": "OpenGarage",
+  "options": {
+    "default": {
+      "pollInterval": 30,
+      "devices": []
+    },
+    "schema": {
+      "type": "object",
+      "required": [
+        "pollInterval",
+        "devices"
+      ],
+      "properties": {
+        "pollInterval": {
+          "title": "Poll Interval",
+          "description": "Interval in seconds at which to poll devices for updates",
+          "type": "integer",
+          "minimum": 1
+        },
+        "devices": {
+          "type": "array",
+          "title": "List of devices",
+          "items": {
+            "title": "Device",
+            "type": "object",
+            "required": [
+              "address",
+              "dkey"
+            ],
+            "properties": {
+              "address": {
+                "type": "string",
+                "title": "IP address"
+              },
+              "dkey": {
+                "type": "string",
+                "title": "Device key"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "short_name": "OpenGarage",
+  "version": "0.1.0"
+}
