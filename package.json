@@ -1,7 +1,7 @@
 {
   "name": "opengarage-adapter",
   "display_name": "OpenGarage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OpenGarage adapter.",
   "main": "index.js",
   "scripts": {
@@ -36,6 +36,9 @@
     "README.md",
     "SHA256SUMS",
     "index.js",
+    "lib/adapter.js",
+    "lib/device.js",
+    "lib/property.js",
     "manifest.json",
     "node_modules"
   ],
