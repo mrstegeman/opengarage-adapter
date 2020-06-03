@@ -1,7 +1,7 @@
 {
   "name": "opengarage-adapter",
   "display_name": "OpenGarage",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "OpenGarage adapter.",
   "main": "index.js",
   "scripts": {
