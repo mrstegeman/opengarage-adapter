@@ -1,7 +1,7 @@
 {
   "name": "opengarage-adapter",
   "display_name": "OpenGarage",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "OpenGarage adapter.",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.1.0"
+    "eslint": "^7.2.0"
   },
   "files": [
     "LICENSE",
