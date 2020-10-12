@@ -1,6 +1,6 @@
 {
   "name": "opengarage-adapter",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "OpenGarage adapter.",
   "main": "index.js",
   "scripts": {
@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/mrstegeman/opengarage-adapter#readme",
   "dependencies": {
-    "ip-regex": "^4.1.0",
-    "node-fetch": "^2.6.0"
+    "ip-regex": "^4.2.0",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.5.0"
+    "eslint": "^7.11.0"
   },
   "files": [
     "LICENSE",

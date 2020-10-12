@@ -1,6 +1,6 @@
 # opengarage-adapter
 
-OpenGarage adapter for the [Mozilla WebThings Gateway](https://iot.mozilla.org).
+OpenGarage adapter for the [WebThings Gateway](https://github.com/WebThingsIO/gateway).
 
 ## Usage
 
