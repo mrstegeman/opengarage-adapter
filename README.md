@@ -13,3 +13,7 @@ To configure the add-on, i.e. add the devices you'd like to control, navigate to
 You'll then add the IP addresses you'd like to control and click _Apply_.
 
 After this, your devices should appear when you click the button to add new things on the home screen.
+
+# Credits
+
+This add-on was originally created by Michael Stegeman (@mrstegeman).
